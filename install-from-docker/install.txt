@@ -1,0 +1,23 @@
+docker run -it -p 8280:8280 -p 8243:8243 -p 9443:9443 --name api-manager wso2/wso2am:2.6.0
+
+
+
+
+
+
+docker run -p 8080:8080 -p 50000:50000 -v /your/home:/var/jenkins_home jenkins
+
+
+docker run -p 8080:8080 -p 50000:50000 --name jenkins -v /Users/elmos/work/jenkins/var_home:/var/jenkins_home self-jenkins-img
+docker run -p 8088:8080 -p 50008:50000 -e JAVA_OPTS='-Xmx2048m  -XX:MaxPermSize=512m' --name jenkins2Go -v /Users/elmos/work/jenkins/var_home2g:/var/jenkins_home jenkins/jenkins:2.326-jdk11
+
+http://localhost:8080/job/TEST-from-Pluralsight-gettingStarted/job/spring-petclinic/
+
+java -jar jenkins-cli.jar -s http://elmos:pass@localhost:8080 get-job TEST-from-Pluralsight-gettingStarted/spring-petclinic > spring-petclinic.xml 
+
+
+-Xmx2048m  -XX:MaxPermSize=512m
+
+-e JAVA_OPTS='-Xmx2048m  -XX:MaxPermSize=512m'
+
+-Xmx1g'
